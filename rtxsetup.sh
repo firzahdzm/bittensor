@@ -219,7 +219,7 @@ async def task_offer(
         if current_job_finish_time is None or current_time + timedelta(hours=1) > current_job_finish_time:
             if request.hours_to_complete < 13:
                 logger.info("Accepting the offer - ty snr")
-                return MinerTaskResponse(message=f"~Cooking Text jobs", accepted=True)
+                return MinerTaskResponse(message=f"Mining Sambil Bernyanyi🎤🎶", accepted=True)
             else:
                 logger.info("Rejecting offer")
                 return MinerTaskResponse(message="I only accept small jobs", accepted=False)
@@ -254,7 +254,7 @@ async def task_offer_image(
         if current_job_finish_time is None or current_time + timedelta(hours=1) > current_job_finish_time:
             if request.hours_to_complete < 3:
                 logger.info("Accepting the image offer")
-                return MinerTaskResponse(message="Bersinar dalam gelap", accepted=True)
+                return MinerTaskResponse(message="Bersinar Dalam Gelap🎤🎶", accepted=True)
             else:
                 logger.info("Rejecting offer - too long")
                 return MinerTaskResponse(message="I only accept small jobs", accepted=False)
