@@ -22,7 +22,7 @@ huggingface_repo_id = ""
 huggingface_repo_type = "model"
 huggingface_repo_visibility = "public"
 huggingface_token = ""
-learning_rate = 0.00006
+learning_rate = 0.00003
 loss_type = "l2"
 lr_scheduler = "constant"
 lr_scheduler_args = []
@@ -56,11 +56,11 @@ save_every_n_epochs = 2
 save_model_as = "safetensors"
 save_precision = "bf16"
 scale_weight_norms = 5
-text_encoder_lr = 0.00006
+text_encoder_lr = 0.00003
 train_batch_size = 2
 train_data_dir = ""
 training_comment = ""
-unet_lr = 0.00006
+unet_lr = 0.00003
 xformers = true
 EOL
 
@@ -219,7 +219,7 @@ async def task_offer(
         if current_job_finish_time is None or current_time + timedelta(hours=1) > current_job_finish_time:
             if request.hours_to_complete < 13:
                 logger.info("Accepting the offer - ty snr")
-                return MinerTaskResponse(message=f"Mining Sambil Bernyanyi🎤🎶", accepted=True)
+                return MinerTaskResponse(message=f"Mining Sambil Bernyanyi\U0001F3B5", accepted=True)
             else:
                 logger.info("Rejecting offer")
                 return MinerTaskResponse(message="I only accept small jobs", accepted=False)
@@ -254,7 +254,7 @@ async def task_offer_image(
         if current_job_finish_time is None or current_time + timedelta(hours=1) > current_job_finish_time:
             if request.hours_to_complete < 3:
                 logger.info("Accepting the image offer")
-                return MinerTaskResponse(message="Bersinar Dalam Gelap🎤🎶", accepted=True)
+                return MinerTaskResponse(message="\U0001F3B5 Shine in The Rome \U0001F3B5", accepted=True)
             else:
                 logger.info("Rejecting offer - too long")
                 return MinerTaskResponse(message="I only accept small jobs", accepted=False)
