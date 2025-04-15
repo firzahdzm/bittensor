@@ -22,7 +22,7 @@ huggingface_repo_id = ""
 huggingface_repo_type = "model"
 huggingface_repo_visibility = "public"
 huggingface_token = ""
-learning_rate = 0.00003
+learning_rate = 0.00004
 loss_type = "l2"
 lr_scheduler = "constant"
 lr_scheduler_args = []
@@ -56,11 +56,11 @@ save_every_n_epochs = 2
 save_model_as = "safetensors"
 save_precision = "bf16"
 scale_weight_norms = 5
-text_encoder_lr = 0.00003
+text_encoder_lr = 0.00004
 train_batch_size = 2
 train_data_dir = ""
 training_comment = ""
-unet_lr = 0.00003
+unet_lr = 0.00004
 xformers = true
 EOL
 
