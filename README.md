@@ -5,8 +5,8 @@ Siapin
 
 Start VPS & install bittensor-cli
 
-wget https://raw.githubusercontent.com/rennzone/Auto-Install-Bittensor-Script/refs/heads/main/bittensor-cli.sh && bash bittensor-cli.sh
--
+```wget https://raw.githubusercontent.com/rennzone/Auto-Install-Bittensor-Script/refs/heads/main/bittensor-cli.sh && bash bittensor-cli.sh
+
 
 regen coldkey
 create new wallet hotkey, simpen phrase
