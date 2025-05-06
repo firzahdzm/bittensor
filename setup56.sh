@@ -325,9 +325,9 @@ async def task_offer_image(
         if request.task_type != TaskType.IMAGETASK:
             return MinerTaskResponse(message="This endpoint only accepts image tasks", accepted=False)
 
-        if "flux" in request.model.lower():
-            logger.info("Rejecting offer - flux model not accepted")
-            return MinerTaskResponse(message="Model flux tidak diterima", accepted=False)
+#        if "flux" in request.model.lower():
+#            logger.info("Rejecting offer - flux model not accepted")
+#            return MinerTaskResponse(message="Model flux tidak diterima", accepted=False)
         
         if current_job_finish_time is None or current_time + timedelta(hours=1) > current_job_finish_time:
             if request.hours_to_complete < 3:
