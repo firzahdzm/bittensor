@@ -92,8 +92,8 @@ huggingface_repo_type = "model"
 huggingface_repo_visibility = "public"
 huggingface_token = ""                                                                                                                                                         
 loss_type = "l2"                                                                                                                                                               
-lr_scheduler = "cosine"                                                                                                                                                      
-lr_scheduler_args = ["num_warmup_steps=200"]                                                                                                                                                         
+lr_scheduler = "constant"                                                                                                                                                      
+lr_scheduler_args = []                                                                                                                                                         
 lr_scheduler_num_cycles = 1                                                                                                                                                    
 lr_scheduler_power = 1                                                                                                                                                         
 max_bucket_reso = 2048                                                                                                                                                         
